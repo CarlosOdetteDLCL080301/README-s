@@ -15,10 +15,57 @@ para conocer como [desplegar](#deploy) el proyecto.
 
 ## Consideraciones importantes para la ejecución del software
 * Tener previamente instalado todos los programas necesarios mencionados en "[Requerimentos de software](#Requeriment)"
+* Si se está desarrollando desde Windows es necesario es necesario poder utilizar el comando git y mvn en el shell. Considera ajustar las variables de entorno.
 * Tener la base de datos **DGAC** con la estructura correcta
 * Revisar las siguientes variables antes de realizar el *build*, en el archivo *application.properties* (ubicado en la ruta "*./src/resources/application.properties*"):
     * La variable "*spring.profiles.active*" se sea igual a *dev*
     * La varibale "*ruta.storage* sea diferente a "*smb://192.168.10.2/VMWARE/CLAF*".
+
+## Estructura del proyecto
+- :file_folder: **target**
+
+- :file_folder: **src/main/resources**
+
+- :file_folder: **src/main/java**
+
+    - :package: **dgac**
+
+    - :package: **dgac.utilidades**
+
+    - :package: **dgac.seguridad**
+
+    - :package: **dgac.movil**
+
+    - :package: **dgac.intercambios**
+
+    - :package: **dgac.dtec**
+
+        - :package: **dgac.dtec.config**
+
+        - :package: **dgac.dtec.controller**
+
+        - :package: **dgac.dtec.dao**
+
+        - :package: **dgac.dtec.entidades**
+
+        - :package: **dgac.dtec.service**
+
+    - :package: **dgac.claf**
+
+        - :package: **dgac.claf.controller**
+
+        - :package: **dgac.claf.dao**
+
+        - :package: **dgac.claf.entidades**
+
+        - :package: **dgac.claf.servicios**
+
+        - :package: **dgac.claf.transacciones**
+
+- :page_facing_up: **Dockerfile**
+
+- :page_facing_up: **pom.xml**
+
 
 ## Propuestas de mejoras a futuro
 * La configuración del ambiente debe mejorarse, ya que estas 2 variables deben cambiarse antes de hacer el [build](#build) para [Despliegue](#deploy) en producción.
@@ -26,3 +73,6 @@ para conocer como [desplegar](#deploy) el proyecto.
 <a name="build"></a>
 
 <a name="deploy"></a>
+:rocket:
+:package: 
+:file_folder:
