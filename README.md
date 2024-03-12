@@ -7,14 +7,14 @@
 
 ## Clonar repositorios:
 * [**DTEC REST**](https://132.247.164.51/dtec/dtec-rest):
-~~~
-git clone git@132.247.164.51:dtec/dtec-rest.git
-~~~
+        ~~~
+        git clone git@132.247.164.51:dtec/dtec-rest.git
+        ~~~
 * [**CLAF REST**](https://132.247.164.51/claf/claf-spring-boot):
-~~~
-git clone git@132.247.164.51:claf/claf-spring-boot.git
-~~~
+        ~~~
+        git clone git@132.247.164.51:claf/claf-spring-boot.git
+        ~~~
 * [***CLIENTE CLAF***](https://132.247.164.51/claf/cliente_front):
-~~~
-git@132.247.164.51:claf/cliente_front.git
-~~~
+        ~~~
+        git@132.247.164.51:claf/cliente_front.git
+        ~~~
