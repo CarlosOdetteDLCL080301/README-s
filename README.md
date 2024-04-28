@@ -1,7 +1,7 @@
 # CLAF
 3
 # CLAF 2
->>>>>>> 16cb93946e0b72770ce93af90509231bd44fa312
+4
 ## Pasos para lograr levantar el Frontend y Backend de la pagina de CLAF
 ***CLAF*** está conformado por los siguientes repositorios:
 * [**DTEC REST**](https://132.247.164.51/dtec/dtec-rest): es del modulo ***DTEC*** (Detección, Tránsito, Estabilización y Copiado de materiales) esta compuesto por servicio ***RESTful*** para obtener y actualizar los datos de la base de datos. Es un modulo "independiente" de ***CLAF*** para contralar en las bovedas construidas ese año conocidas como ***AITEM*** (Área de Ingresos, Tránsito y Estabilización de Materiales), los contenedores de latas de film sin revisión, los cuales son controlados por un codigo de barras (***CB***).
@@ -16,7 +16,7 @@
 * [Java JDK 11](https://www.oracle.com/mx/java/technologies/javase/jdk11-archive-downloads.html)    -
 ### Para ejecutar el programa
 s
-
+666666
 ## Clonar repositorios:
 * [**DTEC REST**](https://132.247.164.51/dtec/dtec-rest):
     ~~~
