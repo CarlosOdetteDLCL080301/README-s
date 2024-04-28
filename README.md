@@ -67,6 +67,12 @@ agregamos modificación
 		//model = glm::scale(model, glm::vec3(4.0f, 4.0f, 4.0f));
 		//glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
+		glUseProgram(0);
+
+mainWindow.swapBuffers();
+
+
+
 		////blending: transparencia o traslucidez
 		//glEnable(GL_BLEND);
 		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
