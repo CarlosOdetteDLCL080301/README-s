@@ -33,3 +33,52 @@ s
     git@132.247.164.51:claf/cliente_front.git
     ~~~
 agregamos modificación
+
+
+		//PISO??
+
+		glm::mat4 model(1.0);
+		glm::mat4 modelaux(1.0);
+		glm::vec3 color = glm::vec3(1.0f, 1.0f, 1.0f);
+
+		model = glm::mat4(1.0);
+		model = glm::translate(model, glm::vec3(0.0f, -1.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(450.0f, 1.0f, 700.0f)); //Esto indica que el piso es 300x300? era 30 en las esquinas
+		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform3fv(uniformColor, 1, glm::value_ptr(color));
+
+		reforma_layout.UseTexture();
+		Material_opaco.UseMaterial(uniformSpecularIntensity, uniformShininess);
+
+		//RENDERIZAMOS EL PISO
+		meshList[2]->RenderMesh(); //Esto creo que es un cubo
+
+		//Modelos Mucha Lucha
+		model = glm::mat4(1.0);
+		model = glm::translate(model, glm::vec3(-300.0f, -2.0f, -295.0)); //X para ancho del mapa y Z para largo del mapa
+		model = glm::scale(model, glm::vec3(5.0f, 5.0f, 5.0f));
+		model = glm::rotate(model, -270 * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+		Astrodomo.RenderModel();
+		
+		////Agave �qu� sucede si lo renderizan antes del coche y el helic�ptero?
+		//model = glm::mat4(1.0);
+		//model = glm::translate(model, glm::vec3(0.0f, 1.0f, -4.0f));
+		//model = glm::scale(model, glm::vec3(4.0f, 4.0f, 4.0f));
+		//glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+
+		////blending: transparencia o traslucidez
+		//glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		//AgaveTexture.UseTexture();
+		////Material_opaco.UseMaterial(uniformSpecularIntensity, uniformShininess);
+		//meshList[3]->RenderMesh();
+		//glDisable(GL_BLEND);
+
+		glUseProgram(0);
+
+		mainWindow.swapBuffers();
+	}
+
+	return 0;
+}
